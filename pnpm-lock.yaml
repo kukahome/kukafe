@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@antfu/ni':
+        specifier: ^0.21.8
+        version: 0.21.8
       '@commitlint/cli':
         specifier: ^17.2.0
         version: 17.2.0
@@ -189,6 +192,11 @@ packages:
       - jest
       - supports-color
       - typescript
+    dev: true
+
+  /@antfu/ni@0.21.8:
+    resolution: {integrity: sha512-90X8pU2szlvw0AJo9EZMbYc2eQKkmO7mAdC4tD4r5co2Mm56MT37MIG8EyB7p4WRheuzGxuLDxJ63mF6+Zajiw==}
+    hasBin: true
     dev: true
 
   /@auto-it/bot-list@10.37.6:
@@ -4970,7 +4978,7 @@ packages:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.5
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: true
