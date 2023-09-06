@@ -17,8 +17,8 @@
     "test": "turbo run test --parallel",
     "test:watch": "turbo run test:watch",
     "test:prod": "turbo run test:prod --parallel",
-    "build": "turbo run build --parallel",
-    "build:prod": "turbo run build --parallel"
+    "build": "turbo build",
+    "build:prod": "turbo build"
   },
   "license": "MIT",
   "devDependencies": {
