@@ -51,7 +51,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: nr install --frozen-lockfile
+        run: ni --frozen-lockfile
 
       - name: Lint
         run: nr lint
