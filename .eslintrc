@@ -1,8 +1,0 @@
-{
-  "root": true,
-  "extends": ["@antfu"],
-  "rules": {
-    "no-console": "off",
-    "no-template-curly-in-string": "off"
-  }
-}

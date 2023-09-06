@@ -1,81 +1,42 @@
 {
-  "name": "@kukafe/monorepo",
-  "type": "module",
-  "version": "0.0.0",
+  "name": "@kukafe/fe-monorepo",
+  "description": "A monorepo boilerplate using pnpm, turborepo, and auto.",
   "private": true,
-  "author": "KUKA",
-  "engines": {
-    "node": ">=14.x",
-    "pnpm": ">=6.x"
-  },
+  "author": "Matthew Waldron",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "preinstall": "npx only-allow pnpm && npx husky install",
-    "format": "prettier --write --cache .",
-    "lint": "eslint --cache .",
-    "lint:fix": "eslint . --fix",
-    "build": "pnpm -r --filter='./packages/*' run build",
-    "build:turbo": "turbo build",
-    "build:nx": "nx run-many -t build",
-    "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
-    "size": "tsx scripts/size.ts",
-    "test": "pnpm -r --parallel --filter='./packages/*' run test",
-    "commit": "cz",
-    "ci:publish": "pnpm publish -r"
+    "commit": "git-cz",
+    "prepare": "husky install",
+    "bootstrap:ci": "pnpm i --frozen-lockfile",
+    "clean": "turbo run clean --parallel",
+    "lint": "turbo run lint --parallel",
+    "test": "turbo run test --parallel",
+    "test:watch": "turbo run test:watch",
+    "test:prod": "turbo run test:prod --parallel",
+    "build": "turbo run build --parallel",
+    "build:prod": "turbo run build --parallel"
   },
-  "dependencies": {},
+  "license": "MIT",
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.8",
-    "@changesets/cli": "^2.26.2",
-    "@commitlint/cli": "^17.6.7",
-    "@commitlint/config-conventional": "^17.6.7",
-    "brotli-size": "^4.0.0",
-    "bumpp": "^9.1.1",
-    "commitizen": "^4.3.0",
-    "consola": "^3.2.3",
-    "conventional-changelog-cli": "^2.2.2",
-    "cross-env": "^7.0.3",
+    "@commitlint/cli": "^17.2.0",
+    "@waldronmatt/auto-config": "^1.0.2",
+    "@waldronmatt/commitlint-config": "^1.1.5",
+    "@waldronmatt/prettier-config": "^1.3.2",
+    "auto": "^10.37.6",
+    "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.41.0",
-    "fast-glob": "^3.3.0",
-    "fs-extra": "^11.1.1",
-    "gzip-size": "^6.0.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
-    "npm-run-all": "^4.1.5",
-    "nx": "16.6.0",
-    "nx-cloud": "latest",
+    "husky": "^8.0.2",
+    "lerna": "^6.0.3",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "rimraf": "^5.0.1",
-    "tsup": "^7.1.0",
-    "tsx": "^3.12.7",
-    "turbo": "^1.10.12",
-    "typescript": "^4.9.5",
-    "vitest": "^0.33.0"
+    "tsup": "^7.2.0",
+    "turbo": "^1.6.3"
   },
-  "pnpm": {
-    "overrides": {}
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pnpm exec lint-staged --concurrent false --allow-empty",
-      "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "pnpm changelog"
-    }
-  },
-  "lint-staged": {
-    "*": [
-      "prettier --write --cache --ignore-unknown"
-    ],
-    "*.{js,mjs,cjs,ts,tsx,vue,md}": [
-      "eslint --cache --fix"
-    ],
-    "packages/*/{src,types}/**/*.ts": [
-      "eslint --cache --fix"
-    ],
-    "packages/**/*.d.ts": [
-      "eslint --cache --fix"
-    ],
-    "playground/**/__tests__/**/*.ts": [
-      "eslint --cache --fix"
-    ]
-  }
+  "repository": "waldronmatt/pnpm-turborepo-auto-boilerplate",
+  "version": "0.0.1"
 }

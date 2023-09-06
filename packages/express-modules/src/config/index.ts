@@ -1,5 +1,5 @@
-import { KukaEnv } from '@kuka/fe-utils'
-import type { KukaEnvType } from '@kuka/fe-utils'
+import { KukaEnv } from '@kukafe/fe-utils'
+import type { KukaEnvType } from '@kukafe/fe-utils'
 
 import dev from './dev.config'
 import fat from './fat.config'
