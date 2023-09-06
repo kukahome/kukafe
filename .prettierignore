@@ -1,0 +1,27 @@
+# .prettierignore
+
+/node_modules
+# OS
+.DS_Store
+.idea
+.editorconfig
+.npmrc
+package-lock.json
+# Ignored suffix
+*.log
+*.md
+*.svg
+*.png
+*ignore
+## Built-files
+.cache
+
+*.js
+*.mjs
+*.cjs
+*.jsx
+*.ts
+*.tsx
+*.d.ts
+*.vue
+

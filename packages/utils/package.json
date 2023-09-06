@@ -1,0 +1,38 @@
+{
+  "name": "@kukafe/fe-utils",
+  "type": "module",
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "types": {
+        "require": "./dist/index.d.cts",
+        "import": "./dist/index.d.ts"
+      },
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && env NODE_ENV=production tsup",
+    "dev": "rimraf dist && env NODE_ENV=development tsup --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepublishOnly": "nr build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:update": "vitest -u"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.6",
+    "eslint": "^8.41.0",
+    "typescript": "^4.9.5"
+  }
+}
