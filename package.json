@@ -11,7 +11,7 @@
   "scripts": {
     "commit": "git-cz",
     "prepare": "husky install",
-    "bootstrap:ci": "pnpm i --frozen-lockfile",
+    "bootstrap:ci": "pnpm install --frozen-lockfile",
     "clean": "turbo run clean --parallel",
     "lint": "turbo run lint --parallel",
     "test": "turbo run test --parallel",
