@@ -20,7 +20,7 @@
     "size": "tsx scripts/size.ts",
     "test": "pnpm -r --parallel --filter='./packages/*' run test",
     "commit": "cz",
-    "ci:publish": "pnpm publish -r --filter='./packages/*'"
+    "ci:publish": "pnpm publish -r'"
   },
   "dependencies": {},
   "devDependencies": {
