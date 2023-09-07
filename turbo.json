@@ -31,6 +31,9 @@
     },
     "test:prod": {
       "outputs": []
+    },
+    "release": {
+      "outputs": []
     }
   }
 }
