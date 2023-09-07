@@ -10,6 +10,9 @@
     "lint:fix": {
       "outputs": []
     },
+    "typecheck": {
+      "outputs": []
+    },
     "test": {
       "outputs": ["coverage/**"],
       "inputs": ["src/**/*.ts", "src/**/*.tsx"]

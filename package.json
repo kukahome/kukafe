@@ -19,6 +19,7 @@
     "test": "turbo run test --parallel",
     "test:watch": "turbo run test:watch",
     "test:prod": "turbo run test:prod --parallel",
+    "typecheck": "turbo run typecheck --parallel",
     "build": "turbo run build",
     "build:prod": "turbo run build",
     "ci:publish": "turbo run build lint && changeset version && changeset publish"
