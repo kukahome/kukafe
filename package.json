@@ -20,7 +20,7 @@
     "test:watch": "turbo run test:watch",
     "test:prod": "turbo run test:prod --parallel",
     "typecheck": "turbo run typecheck",
-    "release": "bumpp --commit --push --tag",
+    "release": "bumpp -r",
     "build": "turbo run build",
     "build:prod": "turbo run build",
     "ci:publish": "turbo run build lint && changeset version && changeset publish"
@@ -45,11 +45,9 @@
     "rimraf": "^5.0.1",
     "tsup": "^7.2.0",
     "turbo": "^1.6.3",
-    "vitest": "^0.34.3"
+    "vitest": "^0.34.3",
+    "bumpp": "^9.2.0"
   },
   "repository": "waldronmatt/pnpm-turborepo-auto-boilerplate",
-  "version": "0.0.2",
-  "dependencies": {
-    "bumpp": "^9.2.0"
-  }
+  "version": "0.0.3"
 }

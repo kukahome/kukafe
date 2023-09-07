@@ -1,7 +1,7 @@
 {
   "name": "@kukafe/fe-utils",
   "type": "module",
-  "version": "1.0.5",
+  "version": "0.0.3",
   "author": "KUKA FE",
   "exports": {
     ".": {
@@ -34,6 +34,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.6",
     "@types/node": "^20.5.9",
+    "bumpp": "^9.2.0",
     "eslint": "^8.41.0",
     "typescript": "^4.9.5"
   }
