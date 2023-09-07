@@ -1,8 +1,8 @@
 {
   "name": "@kukafe/fe-express-modules",
-  "author": "KUKA FE",
   "type": "module",
   "version": "1.0.0",
+  "author": "KUKA FE",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
