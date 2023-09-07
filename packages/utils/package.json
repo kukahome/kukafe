@@ -1,6 +1,7 @@
 {
   "name": "@kukafe/fe-utils",
   "type": "module",
+  "author": "KUKA FE",
   "version": "1.0.5",
   "exports": {
     ".": {

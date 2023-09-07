@@ -1,5 +1,6 @@
 {
   "name": "@kukafe/fe-express-modules",
+  "author": "KUKA FE",
   "type": "module",
   "version": "1.0.0",
   "exports": {
