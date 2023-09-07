@@ -2,6 +2,7 @@
   "name": "@kukafe/fe-monorepo",
   "description": "A monorepo boilerplate using pnpm, turborepo, and auto.",
   "private": true,
+  "packageManager": "pnpm@8.6.0",
   "author": "Matthew Waldron",
   "main": "index.js",
   "workspaces": [
