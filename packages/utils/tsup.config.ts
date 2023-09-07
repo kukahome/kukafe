@@ -1,3 +1,4 @@
+import process from 'node:process'
 import { defineConfig } from 'tsup'
 
 const env = process.env.NODE_ENV

@@ -1,3 +1,4 @@
+import process from 'node:process'
 import { KukaEnv } from '@kukafe/fe-utils'
 import type { KukaEnvType } from '@kukafe/fe-utils'
 
