@@ -20,7 +20,7 @@
     "test:watch": "turbo run test:watch",
     "test:prod": "turbo run test:prod --parallel",
     "typecheck": "turbo run typecheck",
-    "release": "bumpp -r",
+    "release": "bumpp",
     "build": "turbo run build",
     "build:prod": "turbo run build",
     "ci:publish": "turbo run build lint && changeset version && changeset publish"
@@ -49,5 +49,5 @@
     "bumpp": "^9.2.0"
   },
   "repository": "waldronmatt/pnpm-turborepo-auto-boilerplate",
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
