@@ -1,5 +1,5 @@
 {
-  "name": "@kukafe/fe-monorepo",
+  "name": "@kkfe/monorepo",
   "description": "A monorepo boilerplate using pnpm, turborepo, and auto.",
   "private": true,
   "packageManager": "pnpm@8.6.0",

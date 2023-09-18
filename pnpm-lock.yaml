@@ -86,7 +86,7 @@ importers:
 
   packages/express-modules:
     dependencies:
-      '@kukafe/fe-utils':
+      '@kkfe/fe-utils':
         specifier: workspace:*
         version: link:../utils
       express:

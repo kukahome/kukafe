@@ -1,7 +1,7 @@
 {
-  "name": "@kukafe/fe-express-modules",
+  "name": "@kkfe/fe-express-modules",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.6",
   "author": "KUKA FE",
   "exports": {
     ".": {
@@ -28,7 +28,7 @@
     "test:update": "vitest -u"
   },
   "dependencies": {
-    "@kukafe/fe-utils": "workspace:*",
+    "@kkfe/fe-utils": "workspace:*",
     "express": "^4.18.2"
   },
   "devDependencies": {

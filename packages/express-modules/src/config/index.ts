@@ -1,6 +1,6 @@
 import process from 'node:process'
-import { KukaEnv } from '@kukafe/fe-utils'
-import type { KukaEnvType } from '@kukafe/fe-utils'
+import { KukaEnv } from '@kkfe/fe-utils'
+import type { KukaEnvType } from '@kkfe/fe-utils'
 
 import dev from './dev.config'
 import fat from './fat.config'
